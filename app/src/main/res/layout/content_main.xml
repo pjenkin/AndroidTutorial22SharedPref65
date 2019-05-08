@@ -2,7 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/input_username"
+    android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/username_input"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginStart="50dp"
@@ -48,7 +48,7 @@
         android:inputType="textPersonName"
         android:text="@string/password_text"
         app:layout_constraintBottom_toBottomOf="@+id/text_password"
-        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintStart_toStartOf="@+id/username_input"
         app:layout_constraintTop_toTopOf="@+id/text_password"
         app:layout_constraintVertical_bias="0.523" />
 
