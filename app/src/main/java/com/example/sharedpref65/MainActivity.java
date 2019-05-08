@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
         // Setup shared preferences variables - these are to be saved to sharedpreferences file on device
-//        usernameInput = (EditText) findViewById(R.id.input_username);
-//        passwordInput =  findViewById(R.id.input_username);
         usernameInput = findViewById(R.id.username_input);
         passwordInput =  findViewById(R.id.input_password);
         resultText = (TextView) findViewById(R.id.result_text);
