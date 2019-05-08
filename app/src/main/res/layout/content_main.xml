@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/input_username"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/text_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="@string/password_text"
+        app:layout_constraintStart_toStartOf="@+id/text_username"
+        app:layout_constraintTop_toBottomOf="@+id/text_username" />
+
+    <TextView
+        android:id="@+id/text_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/username_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/username_text"
+        app:layout_constraintBottom_toBottomOf="@+id/text_username"
+        app:layout_constraintStart_toEndOf="@+id/text_username"
+        app:layout_constraintTop_toTopOf="@+id/text_username" />
+
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/password_text"
+        app:layout_constraintBottom_toBottomOf="@+id/text_password"
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toTopOf="@+id/text_password"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="71dp"
+        android:onClick="saveButtonClicked"
+        android:text="@string/save_button_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_password" />
+
+    <Button
+        android:id="@+id/display_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="53dp"
+        android:onClick="displayButtonClicked"
+        android:text="@string/display_info_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/save_button" />
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/save_button" />
+</android.support.constraint.ConstraintLayout>
